@@ -1,0 +1,963 @@
+			/******* top navigation bar *******/
+
+			.infoG-nav {
+				background-color: #273036;
+				font-family: 'Proxima Nova Bold', sans-serif;
+				font-weight: normal;
+				color: #0f95d3;
+				width: 100%;
+				position: relative;
+			}
+
+			.infoG-nav #infoG-Title {
+				display: none;
+			}
+
+			.infoG-nav.intro {
+				--background-color: #fff;
+				padding-top: 5em;
+				padding-bottom: 5em;
+			}
+
+			.infoG-nav.intro #infoG-Title {
+				display: block;
+			}
+
+			.infoG-nav.intro #infoG-Title  h2 {
+				font-size:1.6em;
+			}
+
+			.infoG-nav.intro #infoG-Title .first {
+				color: #fff;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+
+			.infoG-nav.intro #infoG-Title .second {
+				color: #0f95d3;
+			}
+
+			.infoG-nav.intro .close-infoG {
+				display: none;
+			}
+
+			.infoG-nav.intro li a {
+				color: #273036;
+			}
+
+			.infoG-nav .close-infoG {
+				position: absolute; 
+				top:2em; 
+				right:3em;
+				display:block;
+				width:2em;
+				height:2em;
+				padding: 0.3em 0.5em;
+				border: 2px solid #0f95d3;
+				border-radius: 4em;
+			}
+
+			.infoG-nav.fixed {
+				position: fixed;
+				top: 0;
+				visibility: hidden;
+				z-index: 1000;
+			}
+
+			.infoG-nav.fixed.shown{
+				visibility: visible;
+			}
+
+			.infoG-nav ul {
+				list-style:none;
+				padding: 0;
+				margin: 0 auto;
+				width: 48.75em;
+			}
+
+			.infoG-nav li {
+				display: inline
+			}
+
+			.infoG-nav li a {
+				display: inline-block;
+				vertical-align: middle;
+				text-align: center;
+				height: 6.25em;
+				width: 8.125em;
+				padding: 3.625em 0.625em 0.625em;
+				text-transform: uppercase;
+				background-repeat: no-repeat;
+				background-position: center 0.5em;
+			}
+
+			.infoG-nav li a.active {
+				background-color: #61b35d;
+			}
+
+			.infoG-nav li a.active {
+				color: #fff;
+			}
+
+			/******** nav icons **********/
+
+			.infoG-nav li.nav-tuna a {
+				background-image: url(../images/nature_u/nav/sushi_blue.png);
+				background-size: 3.375em 2.875em;
+			}
+
+			.infoG-nav li.nav-tuna a.active {
+				background-image: url(../images/nature_u/nav/sushi_white.png);
+			}
+
+			.infoG-nav li.nav-burger a {
+				background-image: url(../images/nature_u/nav/burger_blue.png);
+				background-size: 2.5625em 2.6875em;
+			}
+
+			.infoG-nav li.nav-burger a.active {
+				background-image: url(../images/nature_u/nav/burger_white.png);
+			}
+
+			.infoG-nav li.nav-med a {
+				background-image: url(../images/nature_u/nav/med_blue.png);
+				background-size: 2.3125em 2.8125em;
+			}
+
+			.infoG-nav li.nav-med a.active {
+				background-image: url(../images/nature_u/nav/med_white.png);
+			}
+
+			.infoG-nav li.nav-building a {
+				background-image: url(../images/nature_u/nav/building_blue.png);
+				background-position: center top;
+				background-size: 2.5em 3.625em;
+			}
+
+			.infoG-nav li.nav-building a.active {
+				background-image: url(../images/nature_u/nav/building_white.png);
+			}
+
+			.infoG-nav li.nav-car a {
+				background-image: url(../images/nature_u/nav/car_blue.png);
+				background-size: 3.75em 2.625em;
+			}
+
+			.infoG-nav li.nav-car a.active {
+				background-image: url(../images/nature_u/nav/car_white.png);
+			}
+
+	        .infoG-nav li.nav-cup a {
+				background-image: url(../images/nature_u/nav/cupcake_blue.png);
+				background-size: 2.5em 2.75em;
+			}
+
+			.infoG-nav li.nav-cup a.active {
+				background-image: url(../images/nature_u/nav/cupcake_white.png);
+			}
+
+			/********** info graphic content ********/			
+
+			.infoG {
+			  position: relative;
+			  background-color:#fff;
+			  overflow-y:scroll;
+			  width:100%; 
+			  height:50em; 
+			}
+
+			/*** infoG is invisible so JS can calc elements position for parallax ***/
+
+			.infoG-nav.intro + .infoG {
+				visibility: hidden
+			}
+
+			.infoG .section {
+				position: relative;
+				overflow: hidden;
+				width:100%;
+				height:100%;
+
+				background-repeat: repeat;
+			}
+
+			/*** after JS calc elements position for parallax we remove infoG from the layout ***/
+
+			.infoG-nav.intro + .infoG.ready{
+				display:none;
+				visibility: visible;
+			}
+
+			.infoG.ready .section {
+				display: none;
+			}
+
+			.infoG .section.active{
+				display: block;
+			}
+
+			.infoG .content {
+				position: absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				z-index: 100;
+				color: #fff;
+			}
+
+			.infoG .header {
+				margin-top: 6.25em;
+				margin-bottom: 6.25em;
+				padding: 0 28%;
+				text-align: center;
+			}
+
+			.infoG .header .icon {
+				background-repeat: no-repeat;
+				background-position: center top;
+				background-size: 8.6875em 6.5625em;
+				padding-top: 6.5625em;
+			}
+
+			.infoG .header .icon b {
+				display:block;
+				text-transform:uppercase;
+				font-family: 'Proxima Nova Bold', sans-serif; 
+				font-weight: normal;
+				font-size: 4em;
+				color: #fff;
+				width: 100%;
+			}
+
+			.infoG .header .icon hr {
+				margin: 0 auto;
+				/* width: 21.875em; */
+				height: 0.8125em;
+				background-color: #fff;
+			}
+
+			.infoG .bullets ul {
+				list-style:none;
+				padding: 0;
+				margin: 0 auto;
+				float:right;
+				width:50%;
+			}
+
+			.infoG .bullets li {
+				margin-bottom: 4.25em;
+				padding-top: 4.0625em;
+				padding-right: 1em;
+				background-repeat: no-repeat;
+				background-position: left top;
+				background-size: 4.0625em 4.0625em;
+			}
+
+			.infoG .bullets .icon {
+				width:4.0625em;
+				height:4.0625em;
+			}
+
+			.infoG .call-to-action {
+				margin: 0 auto; 
+				width: 37.5em; 
+				background-color: #fff; 
+				text-align: center; 
+				color: #000; 
+				padding: 1em
+			}
+
+			.infoG .call-to-action h5 {
+				text-align: center;
+			}
+
+			.infoG .call-to-action ul {
+				list-style:none;
+				padding: 0;
+				margin: 0 auto;
+				width: 12em;
+			}
+
+			.infoG .call-to-action .lnk-2{
+				width: 24em;
+			}
+
+			.infoG .call-to-action .large-2{
+				width: 30em;
+			}
+
+			.infoG .call-to-action .lnk-3{
+				width: 36em;
+			}
+
+			.infoG .call-to-action li {
+				display:inline;
+			} 
+
+			.infoG .call-to-action li a {
+				color: #fff;
+				background-color: #4ba947;
+				text-transform:uppercase;
+				font-family: 'Proxima Nova Bold', sans-serif; 
+				font-weight: normal;
+				width: 10em;
+				height: 3em;
+				padding: 1em;
+				margin: 1em;
+				display: inline-block;
+			}
+
+			.infoG .call-to-action .large-2 a { /* two lines of text */
+				width: 13em;
+			}
+
+			.infoG .parallax {
+				font-size: 1.5em;
+			}
+
+			.infoG .parallax .bg {
+				background-repeat: repeat;
+				 position: absolute;
+				 width: 100%;
+				 height: 130%;
+				 top:0;
+				 left:0;
+				 z-index:0;
+			}
+
+			.infoG .parallax .layer {
+				background-repeat: no-repeat;
+				background-size: 100% auto;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+
+			 
+			.clrfix:before,
+			.clrfix:after {
+			    content: " ";
+			    display: table;
+			}
+
+			.clrfix:after {
+			    clear: both;
+			}
+			
+
+			/******* burger section *******/
+
+			#burger {
+				background-image: url(../images/nature_u/bg/burger_BG.jpg);
+				height:130em;
+			}
+
+			#burger .header .icon {
+				background-image: url(../images/nature_u/header/burger_header.png);
+			}
+
+			#burger .bullets .burger-1 {
+				background-image: url(../images/nature_u/bullets/burger_icon_1.png);
+			}
+
+			#burger .bullets .burger-2 {
+				background-image: url(../images/nature_u/bullets/burger_icon_2.png);
+			}
+
+			#burger .bullets .burger-3 {
+				background-image: url(../images/nature_u/bullets/burger_icon_3.png);
+			}
+
+			#burger .bullets .burger-4 {
+				background-image: url(../images/nature_u/bullets/burger_icon_4.png);
+			}
+
+			/******  Parallax *******/
+
+			#burger .parallax {
+				font-size: 1em;
+			}
+
+			#bun {
+				  background-image: url(../images/nature_u/burger/bun_onion_cheese.png);
+				  width: 22.375em;
+				  height: 76.625em;
+				  top: 6.25em;
+				  left:0;
+				  z-index: 6;
+			}
+
+			#tomato {
+				  background-image: url(../images/nature_u/burger/lett_tom.png);
+				  width:22.75em;
+				  height:64.375em;
+				  top:50em;
+				  left:0;
+				  z-index: 4;
+			}
+
+			/* adjust top for safari */
+
+			#meat {
+				  background-image: url(../images/nature_u/burger/burger.png);
+				  width:27em;
+				  height:77.5625em;
+				  top:25em;
+				  left:0;
+				  z-index: 8;
+			}
+
+			#pickle {
+				  background-image: url(../images/nature_u/burger/pickle_spatter.png);
+				  width:22.3125em;
+				  height:136.125em;
+				  top:100em;
+				  left:0;
+				  z-index: 10;
+			}
+
+			/******* tune section *******/
+
+			#tuna {
+				background-image: url(../images/nature_u/bg/TUNA_BG.jpg);
+				height:115em;
+			}
+
+			#tuna .header .icon {
+				background-image: url(../images/nature_u/header/sushi_header.png);
+			}
+
+			#tuna .bullets .tuna-1 {
+				background-image: url(../images/nature_u/bullets/tuna_icon_1.png);
+			}
+
+			#tuna .bullets .tuna-2 {
+				background-image: url(../images/nature_u/bullets/tuna_icon_2.png);
+			}
+
+			#tuna .bullets .tuna-3 {
+				background-image: url(../images/nature_u/bullets/tuna_icon_3.png);
+			}
+
+			/***** parallax ***/
+
+			#stick {
+				background-image: url(../images/nature_u/tuna/sushi_stick.png);
+				width:12.8125em;
+				height:39.375em;
+				top:6.25em;
+				left:0;
+				z-index:6;
+			}
+
+			#sandwich{
+				background-image: url(../images/nature_u/tuna/sandwich.png);
+				width:13.21875em;
+				height:19.6875em;
+				top:25em;
+				left:0;
+				z-index:4;
+			}
+
+			#can{
+				background-image: url(../images/nature_u/tuna/can.png);
+				width:12.75em;
+				height:39.3125em;
+				top:100em;
+				left:0;
+				z-index:8;
+			}
+
+			#sushi{
+				background-image: url(../images/nature_u/tuna/blur_sushi.png);
+				width:10.6875em;
+				height:39.375em;
+				top:75em;
+				left:0;
+				z-index:10;
+			}
+
+			/******* prescription bottle section *******/
+
+			#med {
+				background-image: url(../images/nature_u/bg/RX_BG.jpg);
+				height:110em
+			}
+
+			#med .header .icon {
+				background-image: url(../images/nature_u/header/medicine_header.png);
+			}
+
+			#med .bullets .med-1 {
+				background-image: url(../images/nature_u/bullets/medicine_icon_1.png);
+			}
+
+			#med .bullets .med-2 {
+				background-image: url(../images/nature_u/bullets/medicine_icon_2.png);
+			}
+
+			#med .bullets .med-3 {
+				background-image: url(../images/nature_u/bullets/medicine_icon_3.png);
+			}
+
+			/***** parallax ***/
+
+			#capsule{
+				background-image: url(../images/nature_u/med/spill_capsule.png);
+				width:19.75em;
+				height:39.3125em;
+				top:6.25em;
+				left:0;
+				z-index: 4;
+			}
+
+			#pills{
+				background-image: url(../images/nature_u/med/blur_pills.png);
+				width:8.9375em;
+				height:39.3125em;
+				top:25em;
+				left:0;
+				z-index: 6;
+			}
+
+			#bottle{
+				background-image: url(../images/nature_u/med/blur_bottle.png);
+				width:17.4375em;
+				height:39.3125em;
+				top:50em;
+				left:0;
+				z-index: 6;
+			}
+
+			#pills-2{
+				background-image: url(../images/nature_u/med/blur_pills.png);
+				width:8.9375em;
+				height:39.3125em;
+				top:100em;
+				left:0;
+				z-index: 8;
+			}
+
+			#bumper{
+				background-image: url(../images/nature_u/med/pumper.png);
+				width:22em;
+				height:39.3125em;
+				top:75em;
+				left:0;
+				z-index: 10;
+			}
+
+			/******* car bottle section *******/
+
+			#car {
+				background-image: url(../images/nature_u/bg/transport_BG.jpg);
+				height:125em;
+			}
+
+			#car .header .icon {
+				background-image: url(../images/nature_u/header/transportation_header.png);
+			}
+
+			#car .bullets .car-1 {
+				background-image: url(../images/nature_u/bullets/transport_icon_1.png);
+			}
+
+			#car .bullets .car-2 {
+				background-image: url(../images/nature_u/bullets/transport_icon_2.png);
+			}
+
+			#car .bullets .car-3 {
+				background-image: url(../images/nature_u/bullets/transport_icon_3.png);
+			}
+
+			#car .bullets .car-4 {
+				background-image: url(../images/nature_u/bullets/transport_icon_4.png);
+			}
+
+			/**** parallax *****/
+
+			#oil{
+				background-image: url(../images/nature_u/car/oil.png);
+				width:11.8125em;
+				height:39.3125em;
+				top:6.25em;
+				left:0;
+				z-index: 8;
+			}
+
+			#gas{
+				background-image: url(../images/nature_u/car/gas.png);
+				width:11.4375em;
+				height:39.3125em;
+				top:25em;
+				left:0;
+				z-index: 4;
+			}
+
+			#engine{
+				background-image: url(../images/nature_u/car/engine_handle.png);
+				width:23.3125em;
+				height:39.3125em;
+				top:50em;
+				left:0;
+				z-index: 6;
+			}
+
+			#rock{
+				background-image: url(../images/nature_u/car/blur_rock.png);
+				width:10.9375em;
+				height:39.3125em;
+				top:100em;
+				left:0;
+				z-index: 10;
+			}
+
+			#rock-2{
+				background-image: url(../images/nature_u/car/blur_rock.png);
+				width:10.9375em;
+				height:39.3125em;
+				top:100em;
+				left:0;
+				z-index: 11;
+			}
+
+			/******* building section *******/
+
+			#building {
+				background-image: url(../images/nature_u/bg/building_BG_tile.jpg);
+				height:120em;
+			}
+
+			#building .header .icon {
+				background-image: url(../images/nature_u/header/building_header.png);
+			}
+
+			#building .bullets .building-1 {
+				background-image: url(../images/nature_u/bullets/build_icon_1.png);
+			}
+
+			#building .bullets .building-2 {
+				background-image: url(../images/nature_u/bullets/build_icon_2.png);
+			}
+
+			#building .bullets .building-3 {
+				background-image: url(../images/nature_u/bullets/build_icon_3.png);
+			}
+
+			/***** parallax *****/
+
+			#steel-1{
+				background-image: url(../images/nature_u/building/steel_cinder_1.png);
+				width:15.4375em;
+				height:39.3125em;
+				top:6.25em;
+				left:0;
+				z-index: 8;
+			}
+
+			#steel-2{
+				background-image: url(../images/nature_u/building/steel_2.png);
+				width:14.3125em;
+				height:39.3125em;
+				top:25em;
+				left:0;
+				z-index: 4;
+			}
+
+			#cilinder{
+				background-image: url(../images/nature_u/building/blur_cinder.png);
+				width:12.0625em;
+				height:39.3125em;
+				top:50em;
+				left:0;
+				z-index: 10;
+			}
+
+			#pipe{
+				background-image: url(../images/nature_u/building/blur_pipe.png);
+				width:11.4375em;
+				height:39.3125em;
+				top:100em;
+				left:0;
+				z-index: 6;
+			}
+
+			#pipe-2{
+				background-image: url(../images/nature_u/building/blur_pipe.png);
+				width:11.4375em;
+				height:39.3125em;
+				top:100em;
+				left:0;
+				z-index: 6;
+			}
+
+			/******* cup cake bottle section *******/
+
+			#cup {
+				background-image: url(../images/nature_u/bg/cupcake_tile.jpg);
+				height:135em;
+			}
+
+			#cup .header .icon {
+				background-image: url(../images/nature_u/header/cupcake_header.png);
+			}
+
+			#cup .bullets .cup-1 {
+				background-image: url(../images/nature_u/bullets/cupcake_icon_1.png);
+			}
+
+			#cup .bullets .cup-2 {
+				background-image: url(../images/nature_u/bullets/cupcake_icon_2.png);
+			}
+
+			#cup .bullets .cup-3 {
+				background-image: url(../images/nature_u/bullets/cupcake_icon_3.png);
+			}
+
+			#cup .bullets .cup-4 {
+				background-image: url(../images/nature_u/bullets/cupcake_icon_4.png);
+			}
+
+			/**** parallax ****/
+
+			#sprinkle{
+				background-image: url(../images/nature_u/cupcake/blur_cake2.png);
+				width:9.5em;
+				height:39.3125em;
+				top:6.25em;
+				left:0;
+				z-index: 6;
+			}
+
+			#cake-1{
+				background-image: url(../images/nature_u/cupcake/cakes_1.png);
+				width:14.3125em;
+				height:39.3125em;
+				top:25em;
+				left:0;
+				z-index: 8;
+			}
+
+			#cake-2{
+				background-image: url(../images/nature_u/cupcake/cakes_2.png);
+				width:11.3125em;
+				height:39.3125em;
+				top:75em;
+				left:0;
+				z-index: 4;
+			}
+
+			#cake-3{
+				background-image: url(../images/nature_u/cupcake/blur_cake.png);
+				width:10.625em;
+				height:39.3125em;
+				top:100em;
+				left:0;
+				z-index: 10;
+			}
+
+			#cake-4{
+				background-image: url(../images/nature_u/cupcake/cakes_1.png);
+				width:14.3125em;
+				height:39.3125em;
+				top:100em;
+				left:0;
+				z-index: 4;
+			}
+
+			/******** IE8 Compatibility  *************/
+			.ie8 .infoG .bullets ul {
+					float: none;
+					text-align: center;
+			}
+				
+			.ie8 .infoG .bullets li {
+					background-position: center top;
+					padding-top: 5.0625em;
+			}
+
+			.ie8 .infoG .bullets h5 {
+					text-align: center;
+			}
+
+			.ie8 .infoG .parallax {
+				display: none;
+			}
+
+			/******** RESPONSIVE DESIGN **********/
+
+			@media (min-width: 120em){
+				.infoG .bullets ul{
+					width:70%;
+				}
+			}
+
+			/******** tablet landscape 1024 ******/
+
+			@media (max-width: 64em){
+
+				.elv-test{
+					background-color: green;
+				}
+
+				.elv-test:after {
+					content:"1024";
+				}
+
+				.infoG-nav {
+					font-size: 0.8em;
+				}
+
+				.infoG .parallax {
+					font-size: 1em;
+				}
+			}
+
+			/******* tablet portrait 768 ********/
+
+			@media (max-width: 48em){
+
+				.elv-test{
+					background-color: blue;
+				}
+
+				.elv-test:after {
+					content:"768";
+				}
+
+				.infoG-nav {
+					font-size: 0.575em;
+				}
+
+				.infoG-nav li {
+					width: 8em;
+				}
+
+				.infoG .header .icon b {
+					font-size: 3em;
+				}
+
+				.infoG .content {
+					font-size: 0.8em;
+				}
+
+				.infoG .parallax {
+					font-size: 0.975em;
+				}
+
+				#burger {
+					height: 100em;
+				}
+
+				#burger .parallax {
+					font-size: 0.65em;
+				}
+
+				#tuna, #med {
+					height:85em;
+				}
+
+				#car, #building {
+					height:95em;
+				}
+
+				#cup {
+					height:105em;
+				}
+			}
+
+			/********* phone  landscape 568 ********/
+
+			/* @media (max-width: 35.5em){ */
+			/********* phone  landscape 640 ********/	
+			@media (max-width: 40em){
+
+				.elv-test{
+					background-color: red;
+				}
+
+				.elv-test:after {
+					content:"640";
+				}
+
+				/* .infoG-nav {
+					font-size: 0.575em;
+				} */
+
+				.infoG-nav .close-infoG {
+					display: none;
+				}
+
+				.infoG .header {
+					margin-top: 3.125em;
+					margin-bottom: 6.25em;
+					padding: 0 12.5%;
+				}
+
+				.infoG .header .icon b {
+					font-size: 2em;
+				}
+
+				.infoG .bullets ul {
+					float: none;
+					text-align: center;
+				}
+				
+				.infoG .bullets li {
+					background-position: center top;
+					padding-top: 5.0625em;
+				}
+
+				.infoG .call-to-action {
+					width: 18.75em; 
+				}
+
+				.infoG .call-to-action ul,
+				.infoG .call-to-action .lnk-2,
+				.infoG .call-to-action .large-2,
+				.infoG .call-to-action .lnk-3 {
+				    width: auto;
+				}
+
+				.infoG .call-to-action li {
+				    display:static;
+				}
+
+				.infoG .layer {
+					display: none;
+				}
+
+				#burger {
+					height: 144em;
+				}
+
+				#tuna, #med {
+					height: 115em;
+				}
+
+				#car, #building {
+					height: 130em;
+				}
+
+				#cup {
+					height: 150em;
+				}
+			}
+
+			/******* phone portrait 360 ********/
+
+			@media (max-width: 22.5em){
+				.elv-test{
+					background-color: yellow;
+				}
+
+				.elv-test:after {
+					content:"360";
+				}
+
+				.infoG-nav {
+					font-size: 0.375em;
+				}
+
+			}

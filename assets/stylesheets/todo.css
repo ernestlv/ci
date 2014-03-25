@@ -1,0 +1,32 @@
+.todo {
+  background: #ccc;
+  padding: 200px 0;
+  text-align: center;
+}
+.todo p:first-child {
+  color: #ddd;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 48px;
+  line-height: 1;
+  margin: 0 0 .5em;
+  text-transform: uppercase;
+}
+.todo details {
+  margin: auto;
+  text-align: left;
+  max-width: 650px;
+  width: 100%;
+}
+.todo details summary {
+  cursor: pointer;
+  text-align: center;
+}
+.todo code {
+  background-color: #fee9cc;
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.75);
+  display: inline-block;
+  font-size: .875rem;
+  padding: 1px 3px;
+  text-transform: lowercase;
+}

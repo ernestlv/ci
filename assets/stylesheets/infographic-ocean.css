@@ -1,0 +1,442 @@
+/* @group em/rem font-size */
+/* @end */
+/* @group match */
+/* @end */
+/* @group fonts */
+/* @end */
+/* @group type */
+/* @end */
+/* @group svg/png background */
+/* @end */
+/* @group utilities */
+/* @end */
+/* @group font families */
+.topic-infographic__title {
+  font-family: 'Proxima Nova Light', sans-serif;
+  font-weight: normal;
+}
+
+.topic-infographic__fact-title {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-weight: normal;
+}
+
+.topic-infographic__title, .topic-infographic__fact-title {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* @end */
+/* @group headings */
+/* @end */
+/* @group lists */
+/* @end */
+/* @group buttons */
+/* @end */
+/* @group backgrounds */
+/* @end */
+/* @group dividers */
+/* @end */
+/* @group svgs */
+/* @end */
+/* @group misc */
+/* @end */
+/* @group base setup */
+.topic-infographic {
+  padding: 1px 0 1.5em;
+}
+.topic-infographic .wrapper {
+  max-width: 1040px;
+}
+
+.topic-infographic__title {
+  color: white;
+  font-size: 21px;
+  text-align: center;
+}
+@media (min-width: 48em) {
+  .topic-infographic__title {
+    font-size: 42px;
+  }
+}
+.ie8 .topic-infographic__title {
+  font-size: 42px;
+}
+
+[class*='topic-infographic__fact--'],
+.topic-infographic__fact-title {
+  color: #005f9a;
+}
+
+.topic-infographic__fact-title {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.topic-infographic [class*='icon-'] {
+  color: white;
+  display: block;
+  font-size: 54px;
+  margin-top: .85em;
+  text-align: center;
+}
+.topic-infographic p {
+  font-size: 16px;
+}
+
+/* @end */
+/* @group background */
+.topic-infographic {
+  background: url('../images/infographics/bg-ocean-small.jpg?1389106075') 50% 40% no-repeat;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  position: relative;
+}
+.topic-infographic:before, .topic-infographic:after {
+  content: '';
+  display: block;
+  height: 50%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  margin: auto;
+  right: 0;
+  z-index: -1;
+}
+.topic-infographic:before {
+  background: #74b5e7;
+  top: 0;
+}
+.topic-infographic:after {
+  background: #077fcc;
+  bottom: 0;
+}
+.ie8 .topic-infographic {
+  background-color: #74b5e7;
+  min-width: 960px;
+  padding-bottom: 0 !important;
+  border-bottom: 1.5em solid #077fcc;
+}
+.ie8 .topic-infographic:before, .ie8 .topic-infographic:after {
+  display: none;
+}
+@media (min-width: 30em) and (max-width: 40em) and (min-height: 20em) and (max-height: 22.5em) and (orientation: landscape) {
+  .topic-infographic {
+    background-image: url('../images/infographics/bg-ocean-medium.jpg?1389106075');
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+  }
+}
+@media (min-width: 48em) {
+  .topic-infographic {
+    background-image: url('../images/infographics/bg-ocean-medium.jpg?1389106075');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .topic-infographic:before, .topic-infographic:after {
+    display: none;
+  }
+}
+.ie8 .topic-infographic {
+  background-image: url('../images/infographics/bg-ocean-medium.jpg?1389106075');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.ie8 .topic-infographic:before, .ie8 .topic-infographic:after {
+  display: none;
+}
+@media (min-width: 37.5em) and (max-width: 50em) and (orientation: portrait) {
+  .topic-infographic {
+    background-image: url('../images/infographics/bg-ocean-medium.jpg?1389106075');
+  }
+}
+@media (min-width: 65em) {
+  .topic-infographic {
+    background-image: url('../images/infographics/bg-ocean-large.jpg?1389106075');
+    background-position: 50%;
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+    padding-bottom: 80px;
+  }
+}
+.ie8 .topic-infographic {
+  background-image: url('../images/infographics/bg-ocean-large.jpg?1389106075');
+  background-position: 50%;
+  -webkit-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  background-size: auto 100%;
+  padding-bottom: 80px;
+}
+
+/* @end */
+/* @group bottom 2 facts */
+.topic-infographic__fact--3 .topic-infographic__fact-title,
+.topic-infographic__fact--3 p,
+.topic-infographic__fact--4 .topic-infographic__fact-title,
+.topic-infographic__fact--4 p {
+  color: #fff;
+}
+
+/* @end */
+/* @group mobile */
+.topic-infographic__fact--3 {
+  margin-top: 500px;
+}
+@media (min-width: 48em) {
+  .topic-infographic__fact--3 {
+    margin-top: 0;
+  }
+}
+.ie8 .topic-infographic__fact--3 {
+  margin-top: 0;
+}
+
+/* @end */
+/* @group desktop */
+@media (min-width: 65em) {
+  [class*='topic-infographic__fact--'] {
+    width: 50%;
+  }
+  [class*='topic-infographic__fact--'] [class*='icon-'] {
+    text-align: left;
+  }
+}
+.ie8 [class*='topic-infographic__fact--'] {
+  width: 50%;
+}
+.ie8 [class*='topic-infographic__fact--'] [class*='icon-'] {
+  text-align: left;
+}
+
+/* @end */
+/* @group desktop top facts */
+@media (min-width: 48em) {
+  .topic-infographic__fact--1,
+  .topic-infographic__fact--2 {
+    margin-bottom: 210px;
+  }
+}
+.ie8 .topic-infographic__fact--1, .ie8
+.topic-infographic__fact--2 {
+  margin-bottom: 210px;
+}
+@media (min-width: 65em) {
+  .topic-infographic__fact--1,
+  .topic-infographic__fact--2 {
+    margin-bottom: 90px;
+  }
+}
+.ie8 .topic-infographic__fact--1, .ie8
+.topic-infographic__fact--2 {
+  margin-bottom: 90px;
+}
+
+/* @end */
+/* @group desktop left facts */
+@media (min-width: 65em) {
+  .topic-infographic__fact--1,
+  .topic-infographic__fact--3 {
+    padding-right: 180px;
+  }
+}
+.ie8 .topic-infographic__fact--1, .ie8
+.topic-infographic__fact--3 {
+  padding-right: 180px;
+}
+
+/* @end */
+/* @group desktop right facts */
+@media (min-width: 65em) {
+  .topic-infographic__fact--2,
+  .topic-infographic__fact--4 {
+    padding-left: 220px;
+  }
+}
+.ie8 .topic-infographic__fact--2, .ie8
+.topic-infographic__fact--4 {
+  padding-left: 220px;
+}
+
+/* @end */
+/* @group fact pointers */
+@media (min-width: 65em) {
+  [class*='topic-infographic__fact--'] {
+    position: relative;
+  }
+  [class*='topic-infographic__fact--']:after {
+    content: '';
+    display: block;
+    height: 5px;
+    position: absolute;
+    width: 5px;
+    background: #fff;
+    border-radius: 50%;
+  }
+}
+.ie8 [class*='topic-infographic__fact--'] {
+  position: relative;
+}
+.ie8 [class*='topic-infographic__fact--']:after {
+  content: '';
+  display: block;
+  height: 5px;
+  position: absolute;
+  width: 5px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+@media (min-width: 65em) {
+  .topic-infographic__fact--1:before {
+    content: '';
+    display: block;
+    height: 30px;
+    position: absolute;
+    width: 70%;
+    border: 1px solid #fff;
+    border-top: 0;
+    border-right: 0;
+    border-bottom-left-radius: 5px;
+    right: 60px;
+    top: 100%;
+  }
+  .topic-infographic__fact--1:after {
+    margin-top: 27px;
+    right: 60px;
+    top: 100%;
+  }
+}
+.ie8 .topic-infographic__fact--1:before {
+  content: '';
+  display: block;
+  height: 30px;
+  position: absolute;
+  width: 70%;
+  border: 1px solid #fff;
+  border-top: 0;
+  border-right: 0;
+  border-bottom-left-radius: 5px;
+  right: 60px;
+  top: 100%;
+}
+.ie8 .topic-infographic__fact--1:after {
+  margin-top: 27px;
+  right: 60px;
+  top: 100%;
+}
+
+@media (min-width: 65em) {
+  .topic-infographic__fact--2:before {
+    content: '';
+    display: block;
+    height: 0;
+    position: absolute;
+    width: 37%;
+    border-bottom: 1px solid #fff;
+    left: 20px;
+    top: 130px;
+  }
+  .topic-infographic__fact--2:after {
+    left: 20px;
+    top: 128px;
+  }
+}
+.ie8 .topic-infographic__fact--2:before {
+  content: '';
+  display: block;
+  height: 0;
+  position: absolute;
+  width: 37%;
+  border-bottom: 1px solid #fff;
+  left: 20px;
+  top: 130px;
+}
+.ie8 .topic-infographic__fact--2:after {
+  left: 20px;
+  top: 128px;
+}
+
+@media (min-width: 65em) {
+  .topic-infographic__fact--3:before {
+    content: '';
+    display: block;
+    height: 0;
+    position: absolute;
+    width: auto;
+    border-bottom: 1px solid #fff;
+    left: 160px;
+    margin: auto;
+    right: 80px;
+    top: 130px;
+  }
+  .topic-infographic__fact--3:after {
+    right: 80px;
+    top: 128px;
+  }
+}
+.ie8 .topic-infographic__fact--3:before {
+  content: '';
+  display: block;
+  height: 0;
+  position: absolute;
+  width: auto;
+  border-bottom: 1px solid #fff;
+  left: 160px;
+  margin: auto;
+  right: 80px;
+  top: 130px;
+}
+.ie8 .topic-infographic__fact--3:after {
+  right: 80px;
+  top: 128px;
+}
+
+@media (min-width: 65em) {
+  .topic-infographic__fact--4:before {
+    content: '';
+    display: block;
+    height: 141px;
+    position: absolute;
+    width: 21%;
+    border: 1px solid #fff;
+    border-top: 0;
+    border-right: 0;
+    border-bottom-left-radius: 5px;
+    left: 100px;
+    top: -10px;
+  }
+  .topic-infographic__fact--4:after {
+    left: 98px;
+    top: -10px;
+  }
+}
+.ie8 .topic-infographic__fact--4:before {
+  content: '';
+  display: block;
+  height: 141px;
+  position: absolute;
+  width: 21%;
+  border: 1px solid #fff;
+  border-top: 0;
+  border-right: 0;
+  border-bottom-left-radius: 5px;
+  left: 100px;
+  top: -10px;
+}
+.ie8 .topic-infographic__fact--4:after {
+  left: 98px;
+  top: -10px;
+}
+
+/* @end */
