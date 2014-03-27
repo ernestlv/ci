@@ -233,7 +233,7 @@
 			.infoG .header .icon hr {
 				margin: 0 auto;
 				/* width: 21.875em; */
-				height: 0.8125em;
+				height: 0.5em;
 				background-color: #fff;
 			}
 
@@ -270,6 +270,10 @@
 
 			.infoG .call-to-action h5 {
 				text-align: center;
+				color: #0f95d3; 
+ 				text-transform: uppercase; 
+ 				font-size: 1.3125em; 
+ 				margin-top: 2em;
 			}
 
 			.infoG .call-to-action ul {
@@ -301,6 +305,7 @@
 				text-transform:uppercase;
 				font-family: 'Proxima Nova Bold', sans-serif; 
 				font-weight: normal;
+				font-size: 0.8em;
 				width: 10em;
 				height: 3em;
 				padding: 1em;
@@ -311,6 +316,16 @@
 			.infoG .call-to-action .large-2 a { /* two lines of text */
 				width: 13em;
 			}
+
+			.infoG .close-infoG { 
+ 				text-align: center; 
+ 				margin: 1.5em; 
+ 				font-weight: bold; 
+ 			} 
+
+ 			.infoG .close-infoG a { 
+ 				color: #fff; 
+ 			}
 
 			.infoG .parallax {
 				font-size: 1.5em;
@@ -842,6 +857,10 @@
 					font-size: 0.8em;
 				}
 
+				.infoG .call-to-action h5 { 
+ 					font-size: 1.125em; 
+ 				} 
+
 				.infoG .parallax {
 					font-size: 0.975em;
 				}
@@ -859,7 +878,7 @@
 				}
 
 				#car, #building {
-					height:95em;
+					height:98em;
 				}
 
 				#cup {
