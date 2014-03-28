@@ -415,7 +415,7 @@
 				  background-image: url(../images/nature_u/burger/burger.png);
 				  width:27em;
 				  height:77.5625em;
-				  top:25em;
+				  top:75em;
 				  left:0;
 				  z-index: 8;
 			}
@@ -543,7 +543,7 @@
 			}
 
 			#pills-2{
-				background-image: url(../images/nature_u/med/blur_pills.png);
+				background-image: url(../images/nature_u/med/pumper.png);
 				width:8.9375em;
 				height:39.3125em;
 				top:100em;
@@ -551,14 +551,14 @@
 				z-index: 8;
 			}
 
-			#bumper{
+			/* #bumper{
 				background-image: url(../images/nature_u/med/pumper.png);
 				width:22em;
 				height:39.3125em;
 				top:75em;
 				left:0;
 				z-index: 10;
-			}
+			} */
 
 			/******* car bottle section *******/
 
@@ -773,7 +773,7 @@
 				background-image: url(../images/nature_u/cupcake/cakes_1.png);
 				width:14.3125em;
 				height:39.3125em;
-				top:100em;
+				top:125em;
 				left:0;
 				z-index: 4;
 			}
