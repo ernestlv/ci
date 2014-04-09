@@ -258,11 +258,22 @@
 
 			.infoG .call-to-action {
 				margin: 0 auto; 
-				width: 37.5em; 
+				width: 40.625em;
 				background-color: #fff; 
 				text-align: center; 
 				color: #000; 
-				padding: 1em
+				padding: 1.2em
+			}
+
+			.infoG .call-to-action h3 {
+				font-family: 'Proxima Nova Thin', sans-serif;
+				font-size: 3em;
+				text-align: center;
+				color: #0f95d3;
+			}
+
+			.infoG .call-to-action p {
+				font-size: 1.5em;
 			}
 
 			.infoG .call-to-action h5 {
@@ -842,6 +853,14 @@
 					font-size: 0.8em;
 				}
 
+				.infoG .call-to-action h3 { 
+ 					font-size: 2.5em; 
+ 				} 
+
+ 				.infoG .call-to-action p {
+ 					font-size: 1.2em;
+ 				}
+
 				.infoG .call-to-action h5 { 
  					font-size: 1.125em; 
  				} 
@@ -923,8 +942,12 @@
 					height: 115em;
 				}
 
-				#car, #building {
-					height: 130em;
+				#car {
+					height: 137em;
+				}
+
+				#building {
+					height: 135em;
 				}
 
 				#cup {

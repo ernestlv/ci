@@ -34,16 +34,18 @@ $(document).ready(function(){
 					insideInfoG = true;
 					$('html, body').animate({
 						scrollTop: $('#infoG').offset().top
-					}, 500);
+					}, 250);
 					//location = '#infoG';
 				}
 
 				function enterInfoG(){
 					//console.log('enter infoG', insideInfoG)
-						var winPos = $(window).scrollTop();
-						if ( winPos !== navPos ){
-							scrollToInfoG();
-						}
+						//var winPos = $(window).scrollTop();
+						//if ( winPos !== navPos ){
+							//scrollToInfoG();
+						//}
+
+					insideInfoG = true;	
 				}
 
 				function exitInfoG(e){
@@ -144,12 +146,12 @@ $(document).ready(function(){
 
 				$('.close-infoG').on('click', closeInfoG);
 
-				window.onresize = function(){
+				/* window.onresize = function(){
 					if (insideInfoG){
 						scrollToInfoG();
 						$infoG.scrollTop(1);  //we need to scroll 1px so the scroller position is reset when switching sections
 						parallaxScroll();
 					}
-				};
+				}; */
 
 });
