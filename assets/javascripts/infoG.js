@@ -152,6 +152,6 @@ $(document).ready(function(){
 						$infoG.scrollTop(1);  //we need to scroll 1px so the scroller position is reset when switching sections
 						parallaxScroll();
 					}
-				}; */
+				};  */
 
 });
